@@ -48,3 +48,15 @@ k = KK([4:6,10:24],[4:6,10:24]);
 u = k\p;
 U = [0;0;0;u(1:3);0;0;0;u(4:end);0;0;0];
 P = KK * U;
+%% 输出结果
+% 位移结果如下：
+fprintf('u2=%10.6f mm,\tv6=%10.6f mm,\ttheta2=%10.2G rad\n',u(1:2)*1000,u(3));
+fprintf('u4=%10.6f mm,\tv4=%10.6f mm,\ttheta4=%10.2G rad\n',u(4:5)*1000,u(6));
+fprintf('u5=%10.6f mm,\tv5=%10.6f mm,\ttheta5=%10.2G rad\n',u(7:8)*1000,u(9));
+fprintf('u6=%10.6f mm,\tv6=%10.6f mm,\ttheta6=%10.2G rad\n',u(10:11)*1000,u(12));
+fprintf('u7=%10.6f mm,\tv7=%10.6f mm,\ttheta7=%10.2G rad\n',u(13:14)*1000,u(15));
+fprintf('u8=%10.6f mm,\tv8=%10.6f mm,\ttheta8=%10.2G rad\n',u(16:17)*1000,u(18));
+% 支反力结果如下：
+fprintf('Frx1=%10.2f N,\tFry1=%10.2f N,\tM1=%10.2f N\n',P(1:3));
+fprintf('Frx3=%10.2f N,\tFry3=%10.2f N,\tM3=%10.2f N\n',P(7:9));
+fprintf('Frx9=%10.2f N,\tFry9=%10.2f N,\tM9=%10.2f N\n',P(25:27));
