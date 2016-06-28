@@ -1,0 +1,187 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>&#20064;&#39064;1</title><meta name="generator" content="MATLAB 8.5"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2016-06-28"><meta name="DC.source" content="exam1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; } 
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h1>&#20064;&#39064;1</h1><!--introduction--><p>&#19968;&#24231;&#20004;&#23618;&#24314;&#31569;&#21487;&#20197;&#31616;&#21270;&#20026;&#22270;3&#25152;&#31034;&#27169;&#22411;&#65292; &#26753;&#30340;&#30340;&#21442;&#25968;&#20026; <img src="exam1_eq06546953257447934641.png" alt="$A=4*10^{-2}$"> <img src="exam1_eq04992480456269885321.png" alt="$m^2$">&#65292; <img src="exam1_eq17313708550627581181.png" alt="$I=6.75*10^{-4}$"> <img src="exam1_eq16350357467364060774.png" alt="$m^4$">&#65292; &#26448;&#26009;&#30340;&#24377;&#24615;&#27169;&#37327;&#20026; <img src="exam1_eq11962959011219098024.png" alt="$E=2*10^5$"> <img src="exam1_eq09751574849777299350.png" alt="$MPa$">&#65292;&#35797;&#20998;&#26512;&#35813;&#32467;&#26500;&#65292;&#24182;&#27714;&#21462;&#25903;&#21453;&#21147;&#12290;</p><!--/introduction--><h2>Contents</h2><div><ul><li><a href="#5">&#36755;&#20986;&#32467;&#26524;</a></li></ul></div><p><img vspace="5" hspace="5" src="xiti1.png" alt=""> </p><p><b>&#35299;&#31572;</b> &#33410;&#28857;&#32534;&#21495;&#21450;&#21333;&#20803;&#32534;&#21495;&#22914;&#22270;&#25152;&#31034;&#65306;</p><p><img vspace="5" hspace="5" src="%E6%A1%86%E6%9E%B6%E5%8D%95%E5%85%83%E7%BC%96%E5%8F%B7%E4%B8%8E%E8%8A%82%E7%82%B9%E7%BC%96%E5%8F%B7.png" alt=""> </p><pre class="codeinput">A = 4e-2;
+I = 6.75e-4;
+E = 2e11;  <span class="comment">% &#21333;&#20301;Pa&#65292;= 2e5 MPa</span>
+h = 3;
+l = 4;
+k1 = Beam2D2Node_Stiffness(E,I,A,l); <span class="comment">% &#27178;&#26753;&#21333;&#20803;&#21018;&#24230;&#30697;&#38453;</span>
+k2 = Beam2D2Node_Stiffness(E,I,A,h); <span class="comment">% &#31446;&#26753;&#21333;&#20803;&#21018;&#24230;&#30697;&#38453;,&#23616;&#37096;&#22352;&#26631;&#31995;&#19979;</span>
+T = [0,1,0,0,0,0;
+    -1,0,0,0,0,0;
+    0,0,1,0,0,0;
+    0,0,0,0,1,0;
+    0,0,0,-1,0,0;
+    0,0,0,0,0,1];
+k3 = T'* k2 * T; <span class="comment">% &#31446;&#26753;&#22312;&#25972;&#20307;&#22352;&#26631;&#31995;&#19979;&#21333;&#20803;&#21018;&#24230;&#30697;&#38453;</span>
+KK = zeros(27,27); <span class="comment">% &#25972;&#20307;&#21018;&#24230;&#30697;&#38453;&#21021;&#22987;&#21270;</span>
+KK = Beam2D2Node_Assemble(KK,k3,1,2);
+KK = Beam2D2Node_Assemble(KK,k3,2,4);
+KK = Beam2D2Node_Assemble(KK,k1,4,6);
+KK = Beam2D2Node_Assemble(KK,k1,2,5);
+KK = Beam2D2Node_Assemble(KK,k3,5,6);
+KK = Beam2D2Node_Assemble(KK,k3,3,5);
+KK = Beam2D2Node_Assemble(KK,k1,6,8);
+KK = Beam2D2Node_Assemble(KK,k1,5,7);
+KK = Beam2D2Node_Assemble(KK,k3,7,8);
+KK = Beam2D2Node_Assemble(KK,k3,9,7);
+p=[0,-4e4,-2.667e4, 0,-2.5e4,-1.667e4, 0,-8e4,0,<span class="keyword">...</span>
+    0,-5e4,0, 0,-4e4,2.6667e4, 0,-2.5e4,1.6667e4]';
+<span class="comment">% P=[Frx1,Fry1,M1, 0,-4e4,-2.6667e4, Frx3,Fry3,M3, 0,-2.5e4,-1.667e4,</span>
+<span class="comment">% 0,-8e4,0, 0,-5e4,0, 0,-4e4,2.6667e4, 0,-2.5e4,1.6667e4, Frx9,Fry9,M9]</span>
+<span class="comment">% &#20301;&#31227;&#36793;&#30028;&#26465;&#20214;&#20026;&#65306;u1=v1=theta1=0&#65292;u3=v3=theta3=0,u9=v9=theta9=0;</span>
+k = KK([4:6,10:24],[4:6,10:24]);
+u = k\p;
+U = [0;0;0;u(1:3);0;0;0;u(4:end);0;0;0];
+P = KK * U;
+</pre><h2>&#36755;&#20986;&#32467;&#26524;<a name="5"></a></h2><p>&#20301;&#31227;&#32467;&#26524;&#22914;&#19979;&#65306;</p><pre class="codeinput">fprintf(<span class="string">'u2=%10.6f mm,\tv6=%10.6f mm,\ttheta2=%10.2G rad\n'</span>,u(1:2)*1000,u(3));
+fprintf(<span class="string">'u4=%10.6f mm,\tv4=%10.6f mm,\ttheta4=%10.2G rad\n'</span>,u(4:5)*1000,u(6));
+fprintf(<span class="string">'u5=%10.6f mm,\tv5=%10.6f mm,\ttheta5=%10.2G rad\n'</span>,u(7:8)*1000,u(9));
+fprintf(<span class="string">'u6=%10.6f mm,\tv6=%10.6f mm,\ttheta6=%10.2G rad\n'</span>,u(10:11)*1000,u(12));
+fprintf(<span class="string">'u7=%10.6f mm,\tv7=%10.6f mm,\ttheta7=%10.2G rad\n'</span>,u(13:14)*1000,u(15));
+fprintf(<span class="string">'u8=%10.6f mm,\tv8=%10.6f mm,\ttheta8=%10.2G rad\n'</span>,u(16:17)*1000,u(18));
+<span class="comment">% &#25903;&#21453;&#21147;&#32467;&#26524;&#22914;&#19979;&#65306;</span>
+fprintf(<span class="string">'Frx1=%10.2f N,\tFry1=%10.2f N,\tM1=%10.2f N\n'</span>,P(1:3));
+fprintf(<span class="string">'Frx3=%10.2f N,\tFry3=%10.2f N,\tM3=%10.2f N\n'</span>,P(7:9));
+fprintf(<span class="string">'Frx9=%10.2f N,\tFry9=%10.2f N,\tM9=%10.2f N\n'</span>,P(25:27));
+</pre><pre class="codeoutput">u2= -0.001868 mm,	v6= -0.023189 mm,	theta2=  -4.9E-05 rad
+u4=  0.004152 mm,	v4= -0.032043 mm,	theta4=  -4.7E-05 rad
+u5=  0.000006 mm,	v5= -0.051121 mm,	theta5=  -1.6E-09 rad
+u6=  0.000019 mm,	v6= -0.070914 mm,	theta6=    -2E-10 rad
+u7=  0.001879 mm,	v7= -0.023190 mm,	theta7=   4.9E-05 rad
+u8= -0.004114 mm,	v8= -0.032044 mm,	theta8=   4.7E-05 rad
+Frx1=   4518.76 N,	Fry1=  61837.87 N,	M1=  -4574.80 N
+Frx3=     -0.21 N,	Fry3= 136322.89 N,	M3=      0.38 N
+Frx9=  -4518.56 N,	Fry9=  61839.24 N,	M9=   4574.94 N
+</pre><p class="footer"><br><a href="http://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2015a</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% 习题1
+% 一座两层建筑可以简化为图3所示模型，
+% 梁的的参数为 $A=4*10^{-2}$ $m^2$， $I=6.75*10^{-4}$ $m^4$，
+% 材料的弹性模量为 $E=2*10^5$ $MPa$，试分析该结构，并求取支反力。 
+%%
+% 
+% <<xiti1.png>>
+% 
+%%
+% *解答*
+% 节点编号及单元编号如图所示：
+%%
+%
+% <<框架单元编号与节点编号.png>>
+% 
+%% 
+A = 4e-2;
+I = 6.75e-4;
+E = 2e11;  % 单位Pa，= 2e5 MPa
+h = 3;
+l = 4;
+k1 = Beam2D2Node_Stiffness(E,I,A,l); % 横梁单元刚度矩阵
+k2 = Beam2D2Node_Stiffness(E,I,A,h); % 竖梁单元刚度矩阵,局部坐标系下
+T = [0,1,0,0,0,0;
+    -1,0,0,0,0,0;
+    0,0,1,0,0,0;
+    0,0,0,0,1,0;
+    0,0,0,-1,0,0;
+    0,0,0,0,0,1];
+k3 = T'* k2 * T; % 竖梁在整体坐标系下单元刚度矩阵
+KK = zeros(27,27); % 整体刚度矩阵初始化
+KK = Beam2D2Node_Assemble(KK,k3,1,2);
+KK = Beam2D2Node_Assemble(KK,k3,2,4);
+KK = Beam2D2Node_Assemble(KK,k1,4,6);
+KK = Beam2D2Node_Assemble(KK,k1,2,5);
+KK = Beam2D2Node_Assemble(KK,k3,5,6);
+KK = Beam2D2Node_Assemble(KK,k3,3,5);
+KK = Beam2D2Node_Assemble(KK,k1,6,8);
+KK = Beam2D2Node_Assemble(KK,k1,5,7);
+KK = Beam2D2Node_Assemble(KK,k3,7,8);
+KK = Beam2D2Node_Assemble(KK,k3,9,7);
+p=[0,-4e4,-2.667e4, 0,-2.5e4,-1.667e4, 0,-8e4,0,... 
+    0,-5e4,0, 0,-4e4,2.6667e4, 0,-2.5e4,1.6667e4]';
+% P=[Frx1,Fry1,M1, 0,-4e4,-2.6667e4, Frx3,Fry3,M3, 0,-2.5e4,-1.667e4,
+% 0,-8e4,0, 0,-5e4,0, 0,-4e4,2.6667e4, 0,-2.5e4,1.6667e4, Frx9,Fry9,M9]
+% 位移边界条件为：u1=v1=theta1=0，u3=v3=theta3=0,u9=v9=theta9=0;
+k = KK([4:6,10:24],[4:6,10:24]);
+u = k\p;
+U = [0;0;0;u(1:3);0;0;0;u(4:end);0;0;0];
+P = KK * U;
+%% 输出结果
+% 位移结果如下：
+fprintf('u2=%10.6f mm,\tv6=%10.6f mm,\ttheta2=%10.2G rad\n',u(1:2)*1000,u(3));
+fprintf('u4=%10.6f mm,\tv4=%10.6f mm,\ttheta4=%10.2G rad\n',u(4:5)*1000,u(6));
+fprintf('u5=%10.6f mm,\tv5=%10.6f mm,\ttheta5=%10.2G rad\n',u(7:8)*1000,u(9));
+fprintf('u6=%10.6f mm,\tv6=%10.6f mm,\ttheta6=%10.2G rad\n',u(10:11)*1000,u(12));
+fprintf('u7=%10.6f mm,\tv7=%10.6f mm,\ttheta7=%10.2G rad\n',u(13:14)*1000,u(15));
+fprintf('u8=%10.6f mm,\tv8=%10.6f mm,\ttheta8=%10.2G rad\n',u(16:17)*1000,u(18));
+% 支反力结果如下：
+fprintf('Frx1=%10.2f N,\tFry1=%10.2f N,\tM1=%10.2f N\n',P(1:3));
+fprintf('Frx3=%10.2f N,\tFry3=%10.2f N,\tM3=%10.2f N\n',P(7:9));
+fprintf('Frx9=%10.2f N,\tFry9=%10.2f N,\tM9=%10.2f N\n',P(25:27));
+##### SOURCE END #####
+--></body></html>
