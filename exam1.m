@@ -57,6 +57,6 @@ fprintf('u6=%10.6f mm,\tv6=%10.6f mm,\ttheta6=%10.2G rad\n',u(10:11)*1000,u(12))
 fprintf('u7=%10.6f mm,\tv7=%10.6f mm,\ttheta7=%10.2G rad\n',u(13:14)*1000,u(15));
 fprintf('u8=%10.6f mm,\tv8=%10.6f mm,\ttheta8=%10.2G rad\n',u(16:17)*1000,u(18));
 % 支反力结果如下：
-fprintf('Frx1=%10.2f N,\tFry1=%10.2f N,\tM1=%10.2f N\n',P(1:3));
-fprintf('Frx3=%10.2f N,\tFry3=%10.2f N,\tM3=%10.2f N\n',P(7:9));
-fprintf('Frx9=%10.2f N,\tFry9=%10.2f N,\tM9=%10.2f N\n',P(25:27));
+fprintf('Frx1=%10.2f N,\tFry1=%10.2f N,\tM1=%10.2f N*m\n',P(1:3));
+fprintf('Frx3=%10.2f N,\tFry3=%10.2f N,\tM3=%10.2f N*m\n',P(7:9));
+fprintf('Frx9=%10.2f N,\tFry9=%10.2f N,\tM9=%10.2f N*m\n',P(25:27));
